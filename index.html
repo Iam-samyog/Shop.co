@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop.co</title>
+       <!-- Css  -->
+    <link
+      rel="stylesheet"
+   
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+     <!-- Css Ends -->
+  </head>
+  <body>
+    <!--Upper header part starts-->
+    <header class="bg-black py-2 relative">
+      <div
+        class="container mx-auto max-w-7xl text-center text-white secondary-font relative"
+      >
+        <p>
+          Sign up and get 20% off your first order.
+          <span class="underline underline-offset-4 font-bold"
+            >Sign Up Now</span
+          >
+        </p>
+        <div
+          class="hidden md:block absolute top-1/2 right-4 transform -translate-y-1/2"
+        >
+          <i class="bi bi-x font-bold text-2xl cursor-pointer"></i>
+        </div>
+      </div>
+    </header>
+    <!--Upper header part ends-->
+
+      <!--Navbar begins-->
+ <nav class="container my-[10px] m mx-auto max-w-[1300px] text-center text-white secondary-font">
+        <div class="flex items-center gap-10 py-3 px-4 sm:px-6 lg:px-8">
+            <!-- 🔹 Logo -->
+             <div class="pb-3">
+            <a href="#" class="text-[32px] font-black text-black uppercase primary-font">
+              Shop.co
+            </a>
+        </div>
+            <!-- 🔹 Desktop Menu (Only visible on medium screens and above) -->
+            <div class="hidden md:flex items-center space-x-6">
+              <a href="#" class="text-black font-[20px] flex gap-2 items-center">Shop <img src="img/Vector.svg" alt="" width="10px" class="my-2"/></a>
+              <a href="#" class="text-black font-[20px]">On Sale</a>
+              <a href="#" class="text-black font-[20px]">New Arrivals</a>
+              <a href="#" class="text-black font-[20px]">Brands</a>
+            </div>
+        
+            <!-- 🔹 Search Form (Responsive, mobile shows icon only) -->
+            <div class="flex items-center gap-3">
+              
+             
+              
+              <!-- Desktop: Full Search Bar -->
+              <div class="hidden md:flex w-[577px] bg-[#F0F0F0] py-2 px-4 rounded-[50px] items-center">
+                <i class="bi bi-search text-[#909090] px-2 font-bold"></i>
+                <form action="">
+                  <input
+                    type="text"
+                    class="bg-[#F0F0F0] text-black focus:outline-none  py-[5px] px-2 w-[500px]"
+                    placeholder="Search for products. . ."
+                  />
+                </form>
+              </div>
+            </div>
+        <!-- Mobile: Search Icon Only -->
+        
+            <!-- 🔹 Cart and Profile (Visible on both mobile and desktop) -->
+            
+            <div class="flex gap-3 justify-end items-center md:flex gap-3  items-center">
+              <div class="md:hidden flex items-center   py-2 ">
+                <i class="bi bi-search text-black  text-[20px]  font-bolder "></i>
+              </div>
+              <img src="img/Cart.svg" alt="Cart" class="w-6 h-6" />
+              <img src="img/profile.svg" alt="Profile" class="w-6 h-6" />
+            </div>
+        
+            <!-- 🔹 Mobile Menu Button (Visible on mobile) -->
+            <button id="menuBtn" class="md:hidden text-black font-black text-[20px] focus:outline-none">
+              ☰
+            </button>
+          </div>
+        
+          <!-- 🔹 Mobile Menu (Hidden by default, visible on mobile) -->
+          <div
+            id="mobileMenu"
+            class="hidden md:hidden bg-white border-t border-gray-200"
+          >
+            <a href="#" class="text-black block py-2 px-4 font-[20px]">Shop</a>
+            <a href="#" class="text-black block py-2 px-4 font-[16px]">On Sale</a>
+            <a href="#" class="text-black block py-2 px-4 font-[16px]">New Arrivals</a>
+            <a href="#" class="text-black block py-2 px-4 font-[16px]">Brands</a>
+          </div>
+        </nav>
+        
+
+    <!--Navbar Ends-->
+
+ <!--Main Starts-->
+    <main class="main-background">
+      <div class="container mx-auto mx-w-[1300px]">
+        <div class="md:flex gap-[200px] ">
+          <div class="main-left-part mx-[100px] pt-[53px] w-1/5">
+            <h2 class="primary-font font-bold text-[64px] leading-[65px] w-[600px]">FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
+            <p class="secondary-font w-[572px] text-[16px] font-light  my-[28px] leading-[22px]">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <button class="main-btn">Shop Now</button>
+            
+            <div class="flex gap-10 secondary-font border-gray-200 pt-6">
+              <div class="text-start">
+                <h2 class="text-[40px] font-bold ">200+</h2>
+                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap">International Brands</p>
+              </div>
+              <div class="flex items-center justify-center">
+                <div class="h-20 border-l border-2 (2px) border-gray-300"></div>
+              </div>
+              <div class="text-start">
+                <h2 class="text-[40px] font-bold ">2,000+</h2>
+                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap ">High-Quality Products</p>
+              </div>
+              <div class="flex items-center justify-center">
+                <div class="h-20 border-l border-2 (2px) border-gray-300"></div>
+              </div>
+              <div class="text-start">
+                <h2 class="text-[40px] font-bold ">30,000+</h2>
+                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap">Happy Customers</p>
+              </div>
+            </div>
+          
+           
+          </div>
+          <div class="main-right-part w-4/5 pl-[100px] image-container">
+            <div>
+            <img src="img/main.png" class="big-image w-[650px]" alt="Main Image"/>
+          
+           
+            <img src="img/star.svg" alt="Star Decor 1" class="decor decor-1">
+            <img src="img/star.svg" alt="Star Decor 2" class="decor decor-2">
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+ <!--Main Ends-->
+  
+
+ <!-- Swipper images of brands starts -->
+  <section class="bg-black text-white">
+    <div class="container flex justify-around items-center mx-auto max-w-[1400px] py-10" >
+      <img src="img/brands/Versace.png" alt="">
+      <img src="img/brands/zara-logo-1 1.png" alt="">
+      <img src="img/brands/gucci-logo-1 1.png" alt="">
+      <img src="img/brands/prada-logo-1 1.png" alt="">
+      <img src="img/brands/CK.png" alt="">
+    </div>
+
+  </section>
+ <!-- Swipper images of brands ends -->
+   
+<!--New arrivals startss-->
+<section class="new-arrivals my-[72px] border-b border-gray-200">
+  <div class="container mx-auto max-w-[1400px]">
+      <h2 class="text-center uppercase  primary-font font-bold text-[48px]">New Arrivals</h2>
+      <!--Products start-->
+
+      <div class="grid grid-cols-4 gap-4 mt-[55px] px-[50px]">
+        
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/image 8.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ </h3>
+                <h3 class="rating-value">4.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/image 9.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ ★</h3>
+                <h3 class="rating-value">5.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/Frame 33.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ ★</h3>
+                <h3 class="rating-value">5.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/image 10.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ ★</h3>
+                <h3 class="rating-value">5.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+
+      
+
+      </div>
+       <!--Products ends-->
+
+       <div class="text-center secondary-font mt-[36px] mb-[64px] ">
+        <button class="text-[16px] font-normal border-solid border-gray-200 border-[1px] py-[18px] px-[80px] rounded-[62px]
+          ">View All</button>
+
+       </div>
+  </div>
+
+</section>
+<!--New arrivals ends-->
+   
+<!--Top selling starts-->
+<section class="new-arrivals my-[72px] border-b border-gray-200">
+  <div class="container mx-auto max-w-[1400px]">
+      <h2 class="text-center uppercase  primary-font font-bold text-[48px]">Top Sellers</h2>
+      <!--Products start-->
+
+      <div class="grid grid-cols-4 gap-4 mt-[55px] px-[50px]">
+        
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/image 8.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ </h3>
+                <h3 class="rating-value">4.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/image 9.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ ★</h3>
+                <h3 class="rating-value">5.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/Frame 33.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ ★</h3>
+                <h3 class="rating-value">5.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+      <div class="product secondary-font">
+        <div class="product-image-container bg-[#F0EEED] text-center w-[295px] rounded-[20px] overflow-hidden">
+            <img src="img/clothes/image 10.png" alt="Product Image" class="w-full rounded-xl">
+        </div>
+        <div class="pl-2 mt-3">
+            <h3 class="product-title font-bold text-[20px] capitalize">Sleeve striped T-shirt</h3>
+            <div class="rating flex gap-4 items-center">
+                <h3 class="rating-stars text-yellow-400 font-bold text-[20px]">★ ★ ★ ★ ★</h3>
+                <h3 class="rating-value">5.0/ <span class="text-light text-gray-500">5</span></h3>
+            </div>
+            <div class="price-container flex gap-4 items-center font-bold text-[24px]">
+                <h2 class="current-price">$240</h2>
+                <h2 class="old-price">$260</h2>
+                <h2 class="discount">-20%</h2>
+            </div>
+        </div>
+    </div>
+     
+
+      
+
+      </div>
+       <!--Products ends-->
+
+       <div class="text-center secondary-font mt-[36px] mb-[64px] ">
+        <button class="text-[16px] font-normal border-solid border-gray-200 border-[1px] py-[18px] px-[80px] rounded-[62px]
+          ">View All</button>
+
+       </div>
+  </div>
+
+</section>
+<!--Top selling ends-->
+
+<!--Browse By dress style starts-->
+<section class="secondary-font max-w-7xl mx-auto rounded-3xl bg-gray-100 p-4 md:p-8">
+  <div class="p-6 md:p-10">
+    <h2 class="primary-font md:text-5xl font-bold text-center mb-12 md:mb-16">BROWSE BY DRESS STYLE</h2>
+    
+    <!-- Grid container with fixed height of 290px -->
+    <div class="grid grid-cols-1 h-[400px]  md:grid-cols-10 gap-6 h-[490px]">
+      <!-- Casual Card -->
+      <div class="card-container relative bg-white rounded-3xl overflow-hidden shadow-md  md:col-span-4">
+        <img src="img/Models/image 11.png" alt="Casual style clothing" class="w-full h-full object-cover">
+        <div class="absolute top-8 left-8">
+          <h3 class="text-3xl font-bold text-black">Casual</h3>
+        </div>
+        <div class="card-overlay"></div>
+      </div>
+      
+      <!-- Formal Card -->
+      <div class="card-container relative bg-white rounded-3xl overflow-hidden shadow-md md:col-span-6">
+        <img src="img/Models/image 13.png" alt="Formal style clothing" class="w-full h-full object-cover">
+        <div class="absolute top-8 left-8">
+          <h3 class="text-3xl font-bold text-black">Formal</h3>
+        </div>
+        <div class="card-overlay"></div>
+      </div>
+      
+      <!-- Party Card -->
+      <div class="card-container relative bg-white rounded-3xl overflow-hidden shadow-md md:col-span-6">
+        <img src="img/Models/image 12.png" alt="Party style clothing" class="w-full h-full object-cover">
+        <div class="absolute top-8 left-8">
+          <h3 class="text-3xl font-bold text-black">Party</h3>
+        </div>
+        <div class="card-overlay"></div>
+      </div>
+      
+      <!-- Gym Card -->
+      <div class="card-container relative bg-white rounded-3xl overflow-hidden shadow-md md:col-span-4">
+        <img src="img/Models/image 14.png" alt="Gym style clothing" class="w-full h-full object-cover">
+        <div class="absolute top-8 left-8">
+          <h3 class="text-3xl font-bold text-black">Gym</h3>
+        </div>
+        <div class="card-overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Browse By dress styleends -->
+
+<!--Reviews starts-->
+<section class="max-w-7xl mx-auto px-4 py-16 mt-[32px] secondary-font">
+  <!-- Section Title -->
+  <h2 class="text-4xl font-bold text-start mb-12 primary-font">OUR HAPPY CUSTOMERS</h2>
+  
+  <!-- Reviews Container -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Review Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+              <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
+              <h3 class="font-bold  text-[20px]">Sarah M. <span class="">&#9989;</span></h3>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+              "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+          </p>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+              <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
+              <h3 class="font-bold text-[20px]">Alex K. <span class="">&#9989;</span></h3>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+              "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+          </p>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="mb-4">
+              <div class="text-yellow-400 text-2xl mb-2">★★★★★</div>
+              <h3 class="font-bold text-[20px]">James L. <span class="">&#9989;</span></h3>
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+              "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+          </p>
+      </div>
+  </div>
+
+ 
+ 
+</section>
+<!--Reviews Ends-->
+
+<!--Footer starts -->
+
+  <footer>
+
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+
+  </footer>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#F0F0F0] mt-[150px] py-12 secondary-font relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Newsletter Section -->
+          <div class="text-center mb-12 bg-black text-white py-[43px] px-[64px] rounded-[20px] w-[1240px] absolute top-[-110px] ">
+            <div class="flex justify-between items-center">
+              <div class="w-[560px]">
+              <h2 class="text-[40px] leading-[45px] primary-font font-bold mb-4">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            </div>
+              <div class="secondary-font">
+                <ul>
+                 <li class="bg-white px-4  rounded-[20px] "><i class="bi bi-envelope text-[#999999] font-bold px-2"></i> <input type="email" placeholder="Enter your email address" class="w-64 px-4 py-2  rounded-lg focus:outline-none text-black"></li>
+                 <li><button class="bg-white text-black font-bold mt-2 px-[80px] py-2 rounded-[20px] newletter-btn">Subscribe to Newsletter</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  <div class="pt-20">
+          <!-- Footer Links -->
+          <div class="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12 ">
+            <!-- Shop.co Section -->
+            <div class=" col-span-2 md:col-span-2 ">
+                <h3 class="text-[33.5px] font-bold mb-4 primary-font ">SHOP.CO</h3>
+                <p class="text-gray-600 secondary-font">
+                    We have clothes that suits your style and which you’re proud to wear. From women to men.
+                </p>
+                <div class=" mt-3 flex gap-4 items-center font-bold ">
+                  <a href="#"><i class="bi bi-twitter-x text-2xl"></i></a>
+                  <a href="#"><i class="bi bi-facebook text-2xl" ></i></a>
+                  <a href="#"><i class="bi bi-instagram text-2xl"></i></i></a>
+                  <a href="#"><i class="bi bi-github text-2xl"></i></a>
+                </div>
+
+            </div>
+        
+            <!-- Company Section -->
+            <div class="mt-2">
+                <h3 class="text-[16px] font-medium mb-4 tracking-[3px] ">COMPANY</h3>
+                <ul class="text-gray-600  ">
+                    <li class="mb-2"><a href="#" class="hover:text-black">About</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Features</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Works</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Career</a></li>
+                </ul>
+            </div>
+        
+            <!-- Help Section -->
+            <div class="mt-2">
+                <h3 class="text-[16px] font-medium mb-4 tracking-[3px]">HELP</h3>
+                <ul class="text-gray-600 ">
+                    <li class="mb-2"><a href="#" class="hover:text-black">Customer Support</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Delivery Details</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Terms & Conditions</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Privacy Policy</a></li>
+                </ul>
+            </div>
+        
+            <!-- FAQ Section -->
+            <div class="mt-2">
+                <h3 class="text-[16px] font-medium mb-4 tracking-[3px]">FAQ</h3>
+                <ul class="text-gray-600 ">
+                    <li class="mb-2"><a href="#" class="hover:text-black">Account</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Manage Deliveries</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Orders</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Payments</a></li>
+                </ul>
+            </div>
+        
+            <!-- Resources Section -->
+            <div class="mt-2">
+                <h3 class="text-[16px] font-medium mb-4 tracking-[3px]">RESOURCES</h3>
+                <ul class="text-gray-600 ">
+                    <li class="mb-2"><a href="#" class="hover:text-black">Free eBooks</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Development Tutorials</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">How to - Blog</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-black">Youtube Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+
+      </div>
+         
+
+          <!-- Copyright and Payment Methods -->
+          <div class="border-t border-gray-400  flex flex-col md:flex-row justify-between items-center">
+              <p class="text-gray-600 mb-4 md:mb-0">Shopco © 2000-2023. All Rights Reserved</p>
+              <div class="flex  items-center pt-4">
+                <a href="">
+                  <img src="img/Payments/Visa.png" alt="Visa" class=" w-[80px]"></a>
+                  <a href=""> <img src="img/Payments/Mastercardnice.png" alt="PayPal" class=" w-[80px]"></a>
+                  <a href=""><img src="img/Payments/Applepay.png" alt="Buy" class=" w-[80px]"></a>
+                    <a href=""> <img src="img/Payments/Gpay.png" alt="G Pay" class=" w-[80px]"></a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+<!--Footer Section ends ends-->
+
+
+
+
+    <!--Javascripts -->
+    <script src="scripts.js"></script>
+     <!--Javascripts ends -->
+  </body>
+</html>

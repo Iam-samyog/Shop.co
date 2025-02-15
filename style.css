@@ -1,0 +1,139 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
+
+
+:root{
+    --primary-font:"Integral CF Regular";
+    --secondary-font:'Satoshi', sans-serif;
+
+
+}
+.primary-font{
+    font-family: var(--primary-font);
+}
+.secondary-font{
+    font-family: var(--secondary-font);
+    
+}
+.main-background{
+    background-color: #F2F0F1;
+}
+.main-btn {
+    background-color: black;
+    color: white;
+    font-family: var(--secondary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px 52px;
+    border-radius: 62px;
+    
+}
+
+.main-btn:hover {
+   background-color: rgba(0, 0, 0, 0.804);
+}
+
+
+.main-right-part {
+    display: flex;
+    justify-content: start;
+}
+
+.image-container {
+    position: relative; /* Ensures absolute children stay within this container */
+    width: 650px; /* Adjust based on your actual image size */
+    height: auto;
+    display: inline-block;
+    overflow: hidden; /* Prevents elements from going outside */
+}
+
+.big-image {
+    /* width: 100%; */
+    height: auto;
+    display: block;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.95; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+    100% { opacity: 0.95; transform: scale(1); }
+}
+
+.decor {
+    position: absolute;
+    /* Adjust size of the decorative elements */
+    height: auto;
+    animation: twinkle 1.5s infinite ease-in-out alternate; 
+}
+
+/* Positioning of the elements */
+.decor-1 {
+    top: 10%; /* Adjust the position */
+    right: 10%;
+    width:100px;
+    animation-delay: 1s; /* Slight delay for variation */
+}
+
+.decor-2 {
+    bottom: 40%;
+    width:60px;
+    left: 15%;
+    animation-delay: 1.5s; /* Slight delay for variation */
+}   
+
+.price-container .old-price{
+    text-decoration:line-through;
+    color:#999;
+
+
+}
+.price-container .discount {
+    background-color: rgba(255, 99, 71, 0.2);
+    color: tomato;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.product-image-container img {
+    /* Match the rounded corners */
+/* Ensure the image is above the black background */
+    transition: transform 0.5s ease;
+}
+
+
+
+.product-image-container:hover img {
+    transform: scale(1.1); /* Optional: Slight zoom effect on hover */
+}
+
+
+.card-container {
+      transition: transform 0.3s ease;
+    }
+    .card-container:hover {
+      transform: scale(1.03);
+    }
+    .card-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+      height: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .card-container:hover .card-overlay {
+      opacity: 1;
+    }
+
+
+.newletter-btn:hover{
+    background-color: black;
+    color:white;
+    border:2px solid white;
+    
+}
