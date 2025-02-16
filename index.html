@@ -16,7 +16,7 @@
      <!-- Css Ends -->
   </head>
   <body>
-    <!--Upper header part starts-->
+    <!--Upper header part starts--> <!--Resonpsive done tick-->
     <header class="bg-black py-2 relative">
       <div
         class="container mx-auto max-w-7xl text-center text-white secondary-font relative"
@@ -36,72 +36,74 @@
     </header>
     <!--Upper header part ends-->
 
-      <!--Navbar begins-->
- <nav class="container my-[10px] m mx-auto max-w-[1300px] text-center text-white secondary-font">
-        <div class="flex items-center gap-10 py-3 px-4 sm:px-6 lg:px-8">
-            <!-- 🔹 Logo -->
-             <div class="pb-3">
-            <a href="#" class="text-[32px] font-black text-black uppercase primary-font">
-              Shop.co
-            </a>
-        </div>
-            <!-- 🔹 Desktop Menu (Only visible on medium screens and above) -->
-            <div class="hidden md:flex items-center space-x-6">
-              <a href="#" class="text-black font-[20px] flex gap-2 items-center">Shop <img src="img/Vector.svg" alt="" width="10px" class="my-2"/></a>
-              <a href="#" class="text-black font-[20px]">On Sale</a>
-              <a href="#" class="text-black font-[20px]">New Arrivals</a>
-              <a href="#" class="text-black font-[20px]">Brands</a>
-            </div>
+      <!--Navbar begins--> 
+      <nav class="container my-[10px] mx-auto max-w-[1300px] text-center text-white secondary-font">
+        <div class="flex items-center justify-between py-3 px-4 sm:px-6 lg:px-8">
+          
         
-            <!-- 🔹 Search Form (Responsive, mobile shows icon only) -->
-            <div class="flex items-center gap-3">
-              
-             
-              
-              <!-- Desktop: Full Search Bar -->
-              <div class="hidden md:flex w-[577px] bg-[#F0F0F0] py-2 px-4 rounded-[50px] items-center">
-                <i class="bi bi-search text-[#909090] px-2 font-bold"></i>
-                <form action="">
-                  <input
-                    type="text"
-                    class="bg-[#F0F0F0] text-black focus:outline-none  py-[5px] px-2 w-[500px]"
-                    placeholder="Search for products. . ."
-                  />
-                </form>
-              </div>
-            </div>
-        <!-- Mobile: Search Icon Only -->
-        
-            <!-- 🔹 Cart and Profile (Visible on both mobile and desktop) -->
-            
-            <div class="flex gap-3 justify-end items-center md:flex gap-3  items-center">
-              <div class="md:hidden flex items-center   py-2 ">
-                <i class="bi bi-search text-black  text-[20px]  font-bolder "></i>
-              </div>
-              <img src="img/Cart.svg" alt="Cart" class="w-6 h-6" />
-              <img src="img/profile.svg" alt="Profile" class="w-6 h-6" />
-            </div>
-        
-            <!-- 🔹 Mobile Menu Button (Visible on mobile) -->
-            <button id="menuBtn" class="md:hidden text-black font-black text-[20px] focus:outline-none">
+          <div class="flex gap-4 items-center md:pb-3">
+              <!-- 🔹 Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden  pt-[4px] text-black font-black text-[24px] focus:outline-none">
               ☰
             </button>
+              <!-- 🔹 Logo -->
+            <a href="#" class="text-[28px] md:text-[32px] font-black text-black uppercase primary-font">
+              Shop.co
+            </a>
           </div>
-        
-          <!-- 🔹 Mobile Menu (Hidden by default, visible on mobile) -->
-          <div
-            id="mobileMenu"
-            class="hidden md:hidden bg-white border-t border-gray-200"
-          >
-            <a href="#" class="text-black block py-2 px-4 font-[20px]">Shop</a>
-            <a href="#" class="text-black block py-2 px-4 font-[16px]">On Sale</a>
-            <a href="#" class="text-black block py-2 px-4 font-[16px]">New Arrivals</a>
-            <a href="#" class="text-black block py-2 px-4 font-[16px]">Brands</a>
+      
+          <!-- 🔹 Desktop Menu & Search (Flex on MD+ screens) -->
+          <div class="hidden md:flex items-center gap-8 w-full ml-[30px]">
+            <a href="#" class="text-black font-[20px] flex gap-2 items-center">
+              Shop <img src="img/Vector.svg" alt="" width="10px" class="my-2"/>
+            </a>
+            <a href="#" class="text-black font-[20px]">On Sale</a>
+            <a href="#" class="text-black font-[20px]">New Arrivals</a>
+            <a href="#" class="text-black font-[20px]">Brands</a>
+      
+            <!-- 🔹 Desktop Search Bar (Centered with Flex) -->
+            <div class="hidden md:flex w-[577px] bg-[#F0F0F0] py-2 px-4 rounded-[50px] items-center">
+              <i class="bi bi-search text-[#909090] px-2 font-bold"></i>
+              <form action="">
+                <input
+                  type="text"
+                  class="bg-[#F0F0F0] text-black focus:outline-none  py-[5px] px-2 w-[500px]"
+                  placeholder="Search for products. . ."
+                />
+              </form>
+            </div>
           </div>
-        </nav>
+      
+          <!-- 🔹 Mobile Search + Cart + Profile -->
+          <div class="flex items-center gap-3">
+            <!-- Mobile: Search Icon Next to Cart/Profile -->
+            <button id="mobileSearchBtn" class="md:hidden">
+              <i class="bi bi-search text-black text-[20px] font-bold"></i>
+            </button>
+      
+            <img src="img/Cart.svg" alt="Cart" class="w-6 h-6"/>
+            <img src="img/profile.svg" alt="Profile" class="w-6 h-6"/>
+      
+          
         
-
+          </div>
+        </div>
+      
+        <!-- 🔹 Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+          <a href="#" class="block py-2 px-4 text-black font-[20px]">Shop</a>
+          <a href="#" class="block py-2 px-4 text-black font-[16px]">On Sale</a>
+          <a href="#" class="block py-2 px-4 text-black font-[16px]">New Arrivals</a>
+          <a href="#" class="block py-2 px-4 text-black font-[16px]">Brands</a>
+        </div>
+      </nav>
+      
+      
+       
     <!--Navbar Ends-->
+    
+ 
+    
 
  <!--Main Starts-->
     <main class="main-background">
