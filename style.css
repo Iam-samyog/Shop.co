@@ -22,9 +22,7 @@
     background-color: black;
     color: white;
     font-family: var(--secondary-font);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+   text-align:center ;
     padding: 15px 52px;
     border-radius: 62px;
     
@@ -80,7 +78,41 @@
     width:60px;
     left: 15%;
     animation-delay: 1.5s; /* Slight delay for variation */
-}   
+}  
+@media (max-width: 768px) {
+    .main-btn {
+      width: 100%;
+      padding: 12px 30px;
+    }
+    .decor-1 {
+        width: 40px;
+        top: 5%;
+        right: 3%;
+      }
+      
+      .decor-2 {
+        width: 25px;
+        bottom: 30%;
+        left: 20%;
+      }
+    
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .decor-1 {
+      width: 80px;
+      top: 5%;
+      right: 5%;
+    }
+    
+    .decor-2 {
+      width: 40px;
+      bottom: 30%;
+      left: 20%;
+    }
+  } 
+
 
 .price-container .old-price{
     text-decoration:line-through;
