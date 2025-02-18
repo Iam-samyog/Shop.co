@@ -191,7 +191,7 @@
     }
   
   }
-@media (min-width: 1024px) and (max-width:1350px) {
+@media (min-width: 1024px) and (max-width:1280px) {
       
     
       .tablet-search {
@@ -207,15 +207,16 @@
       .tablet-search-display{
         display: block !important;
     }
-    .main-left-font{
-       
-        width:100%!important;
+    .main-right-part{
+        display: none;
+      }
     
-    }
+   
+   
    
       
   }
-@media (min-width: 1350px) and (max-width:1450px) {
+@media (min-width: 1350px) and (max-width:1600px) {
       
     .tablet-search {
         width: 100% !important;
@@ -228,7 +229,9 @@
           font-size: 14px !important;
           white-space: nowrap!important;
       }
-     
+    
+    
+ 
     
   }
   
