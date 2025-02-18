@@ -108,29 +108,29 @@
     <main class="main-background">
       <div class="container mx-auto mx-w-[1300px]">
         <div class="flex flex-col md:flex-col md:gap-8 lg:flex-row lg:gap-[220px] main-image-display  ">
-          <div class="main-left-part px-3 py-5 md:mx-[100px] md:pt-[53px] md:w-1/5">
+          <div class="main-left-part  py-5 md:mx-[100px] md:pt-[53px] md:w-1/5 md:flex-wrap lg:flex-nowrap main-left  main-left-font">
             <h2 class="primary-font  leading-tight font-bold text-[32px] md:text-[48px]  md:font-bold  lg:text-[64px] md:leading-[65px] md:w-[600px] ">FIND CLOTHES THAT MATCHES YOUR STYLE</h2>
-            <p class="secondary-font text-[14px] md:w-[572px] text-[16px] font-light  my-[28px] leading-[22px]">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+            <p class="secondary-font text-[14px] md:w-[572px] text-[16px] font-light  my-[28px] leading-[22px] main-left-font ">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
             <button class="main-btn whitespace-nowrap w-full sm:w-auto ">Shop Now</button>
                <!-- Stats Section -->
-            <div class="flex flex-wrap  md:flex-nowrap   justify-between  md:gap-10 secondary-font border-gray-200 pt-6 ">
+            <div class="flex flex-wrap  md:flex-nowrap   justify-between  md:gap-10 secondary-font border-gray-200 pt-6  ">
               <div class="text-start">
-                <h2 class=" text-[25px] md:text-[40px] font-bold ">200+</h2>
-                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap">International Brands</p>
+                <h2 class=" text-[25px] md:text-[40px] font-bold main-left-font ">200+</h2>
+                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap main-left-font">International Brands</p>
+              </div>
+              <div class="flex items-center justify-center ">
+                <div class="h-20 border-l border-2 (2px) border-gray-300"></div>
+              </div>
+              <div class="text-start">
+                <h2 class="text-[25px] md:text-[40px] font-bold main-left-font ">2,000+</h2>
+                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap main-left-font">High-Quality Products</p>
               </div>
               <div class="flex items-center justify-center">
                 <div class="h-20 border-l border-2 (2px) border-gray-300"></div>
               </div>
               <div class="text-start">
-                <h2 class="text-[25px] md:text-[40px] font-bold ">2,000+</h2>
-                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap ">High-Quality Products</p>
-              </div>
-              <div class="flex items-center justify-center">
-                <div class="h-20 border-l border-2 (2px) border-gray-300"></div>
-              </div>
-              <div class="text-start">
-                <h2 class="text-[25px] md:text-[40px] font-bold ">30,000+</h2>
-                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap">Happy Customers</p>
+                <h2 class="text-[25px] md:text-[40px] font-bold main-left-font">30,000+</h2>
+                <p class="text-sm text-gray-500 mt-2 whitespace-nowrap main-left-font">Happy Customers</p>
               </div>
             </div>
           
@@ -138,10 +138,10 @@
           </div>
           <div class="main-right-part  w-4/5 pl-[100px] image-container">
             <div>
-            <img src="img/main.png" class="big-image w-[650px]" alt="Main Image"/>
+            <img src="img/main.png" class="big-image w-full " alt="Main Image"/>
           
            
-            <img src="img/star.svg" alt="Star Decor 1" class="decor decor-1">
+            <img src="img/star.svg" alt="Star Decor 1 " class="decor decor-1">
             <img src="img/star.svg" alt="Star Decor 2" class="decor decor-2">
           </div>
 
@@ -154,8 +154,8 @@
   
 
  <!-- Swipper images of brands starts -->
-  <section class="bg-black text-white">
-    <div class="container flex justify-around items-center mx-auto max-w-[1400px] py-10" >
+  <!-- <section class="bg-black text-white">
+    <div class="container flex  justify-around items-center mx-auto max-w-[1400px] py-10 " >
       <img src="img/brands/Versace.png" alt="">
       <img src="img/brands/zara-logo-1 1.png" alt="">
       <img src="img/brands/gucci-logo-1 1.png" alt="">
@@ -163,7 +163,19 @@
       <img src="img/brands/CK.png" alt="">
     </div>
 
+  </section> -->
+  <section class="bg-black text-white">
+    <div class="container mx-auto max-w-[1400px] py-10 px-4">
+      <div class="flex flex-wrap justify-center md:justify-around items-center gap-8 md:gap-8">
+        <img src="img/brands/Versace.png" alt="Versace" class="h-10 ">
+        <img src="img/brands/zara-logo-1 1.png" alt="Zara" class="h-10 ">
+        <img src="img/brands/gucci-logo-1 1.png" alt="Gucci" class="h-10 ">
+        <img src="img/brands/prada-logo-1 1.png" alt="Prada" class="h-10 ">
+        <img src="img/brands/CK.png" alt="Calvin Klein" class="h-10 ">
+      </div>
+    </div>
   </section>
+  
  <!-- Swipper images of brands ends -->
    
 <!--New arrivals startss-->
