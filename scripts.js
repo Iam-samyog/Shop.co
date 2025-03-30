@@ -57,3 +57,4 @@ window.onload = function() {
         console.error("Mobile search button not found");
     }
 };
+
